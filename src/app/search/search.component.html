@@ -1,0 +1,72 @@
+<h1>Results for {{movieTitle}}</h1>
+<hr />
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Cover</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let search of searchResults">
+      <th scope="row">1</th>
+      <td>
+        <img [src]="search.imageUrl" width="100" alt="movie" />
+      </td>
+      <td>{{search.title}}</td>
+      <td>{{search.shortDescription}}</td>
+      
+      <td>
+        <a
+          class="btn btn-warning"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          ><i class="bi bi-flim"></i>Trailer</a
+        >
+        <br />
+        <a class="btn btn-primary" [routerLink]="search.detailLink"><i class="bi bi-eye"></i>Details</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <iframe
+          width="100%"
+          height="360"
+          src="https://www.youtube.com/embed/OEl4Dzru9EE?si=XwdYk9tQXaPhkcMK"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <b>
+          {{movieTitle}}
+        </b>
+      </div>
+    </div>
+  </div>
+</div>

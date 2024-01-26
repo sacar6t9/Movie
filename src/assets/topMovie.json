@@ -1,0 +1,26 @@
+[
+    {
+        "imageUrl": "../../assets/images/card.jpg",
+        "title": "The Godfather",
+        "actors": "Marlon Brando, Al Pacino",
+        "year": "1972",
+        "rate": 9.7,
+        "trophy": "3 Oscars"
+    },
+    {
+        "imageUrl": "../../assets/images/card.jpg",
+        "title": "Schindler's List",
+        "actors": "Liam Neeson, Ben Kingsley",
+        "year": "1993",
+        "rate": 9.4,
+        "trophy": "7 Oscars"
+    },
+    {
+        "imageUrl": "../../assets/images/card.jpg",
+        "title": "The Dark Knight",
+        "actors": "Christian Bale, Heath Ledger",
+        "year": "2008",
+        "rate": 9.2,
+        "trophy": "2 Oscars"
+    }
+]

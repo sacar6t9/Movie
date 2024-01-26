@@ -1,0 +1,18 @@
+[
+    {
+      "imageUrl": "../../assets/images/card.jpg",
+      "title": "Movie#1Title",
+      "rate": 9.5
+    },
+    {
+      "imageUrl": "../../assets/images/card.jpg",
+      "title": "Movie#2Title",
+      "rate": 9.5
+    },
+    {
+      "imageUrl": "../../assets/images/card.jpg",
+      "title": "Movie#3Title",
+      "rate": 9.5
+    }
+  ]
+  

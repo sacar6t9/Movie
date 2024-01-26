@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Movie App';
+  pcolor:string=''
+  setColor(color:string){
+    console.log(color)
+    this.pcolor=color;
+  }
+  name:string=''
 }

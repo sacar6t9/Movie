@@ -1,0 +1,17 @@
+[{
+"index":1,
+"imageUrl":"../../assets/images/card.jpg",
+"title":"movie Title",
+"shortDescription":"shortDescription",
+"detailLink":"1"
+
+
+},{
+    "index":2,
+"imageUrl":"../../assets/images/card.jpg",
+"title":"movie Title",
+"shortDescription":"shortDescription",
+"detailLink":"2"
+
+}
+]

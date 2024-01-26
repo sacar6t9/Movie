@@ -1,0 +1,18 @@
+{
+    "Stars": [
+      "Star#1Name",
+      "Star#2Name",
+      "Star#3Name"
+    ],
+    "Directors": [
+      "Director#1Name",
+      "Director#2Name",
+      "Director#3Name"
+    ],
+    "Genres": [
+      "genre1",
+      "genre2",
+      "genre3"
+    ]
+  }
+  

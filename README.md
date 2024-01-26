@@ -1,27 +1,48 @@
-# App
+1. Clone the repository:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+```
+git clone https://github.com/username/movie-app.git
+```
 
-## Development server
+2. Install the dependencies:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```
+npm install
+```
 
-## Code scaffolding
+## Running the Application
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To run the application, follow these steps:
 
-## Build
+1. Start the development server:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+ng serve
+```
 
-## Running unit tests
+2. Open a browser and navigate to `http://localhost:4200` to access the application.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Project Structure
 
-## Running end-to-end tests
+The project is structured as follows:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- `app.component.ts`: The main component of the application.
+- `app.module.ts`: The main module of the application.
+- `app-routing.module.ts`: The routing module for the application.
+- `navbar.component.ts`: The component for the navigation bar.
+- `home.component.ts`: The component for the home page.
+- `footer.component.ts`: The component for the footer.
+- `details.component.ts`: The component for the movie details page.
+- `details-movie.component.ts`: The component for the movie details section.
+- `details-reviews.component.ts`: The component for the movie reviews section.
+- `not-authorize.component.ts`: The component for the unauthorized access page.
+- `search.component.ts`: The component for the search page.
+- `loader.component.ts`: The component for the loading indicator.
+- `modal.component.ts`: The component for the modal dialog.
+- `app-details-actors.component.ts`: The component for the movie actors section.
+- `not-found.component.ts`: The component for the not found page.
+- `feedback.component.ts`: The component for the feedback form.
+- `movies.service.ts`: The service for interacting with the movie API.
+- `global-error-handler.service.ts`: The service for handling global errors.
+- `auth.guard.ts`: The guard for protecting routes that require authentication.
+- `auth.module.ts`: The module for integrating Auth0 authentication.

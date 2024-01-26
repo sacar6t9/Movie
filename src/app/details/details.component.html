@@ -1,0 +1,94 @@
+<h1>Movie Title</h1>
+<br />
+<div class="row">
+  <div class="col-md-6">
+    <iframe
+      width="540"
+      height="360"
+      src="https://www.youtube.com/embed/OEl4Dzru9EE?si=XwdYk9tQXaPhkcMK"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div class="col-md-6">
+    <p class="lead">
+      This is going to be a placeholder for the movie plot
+    </p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">Stars</div>
+          <ul class="list-group list-group-flush" >
+            <li class="list-group-item"*ngFor=" let star of Stars">{{star}}</li>
+            <!-- <li class="list-group-item">Star2</li>
+            <li class="list-group-item">Star3</li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">Director</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let director of directors">{{director}}</li>
+            <!-- <li class="list-group-item">Director2</li>
+            <li class="list-group-item">Director3</li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">Genre</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let genre of genres">{{genre}}</li>
+            <!-- <li class="list-group-item">Genre2</li>
+            <li class="list-group-item">Genre3</li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <h1>Actor</h1>
+    <br />
+    <div class="col-md-12 text-center">
+      <app-app-details-actors />
+    </div>
+    <div class="text-center">
+      <a class="btn btn-warning" [routerLink]="['/details/actor/'+movieId]" > view more</a>
+
+    </div>
+  </div>
+  <br />
+  <br>
+  <hr />
+
+  <div class="row">
+    <h1>Reviews</h1>
+    <br />
+    <div class="col-md-12">
+      <app-details-reviews></app-details-reviews>
+    </div>
+    <div class="text-center">
+      <a class="btn btn-warning" [routerLink]="['/details/reviews/'+movieId]" > view more</a>
+
+    </div>
+  </div>
+  <hr />
+  <br />
+
+  <div class="row">
+    <h1>similar movies</h1>
+    <br />
+    <div class="col-md-12 text-center">
+      <app-details-movie />
+    </div>
+    <div class="text-center">
+      <a class="btn btn-warning" [routerLink]="['/details/movies/'+movieId]" > view more</a>
+    </div>
+  </div>
+</div>
+<!-- <app-details-movie /> -->

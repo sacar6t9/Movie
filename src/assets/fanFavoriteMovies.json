@@ -1,0 +1,35 @@
+ [
+      {
+        "imageUrl": "../../assets/images/card.jpg",
+        "title": "Inception",
+        "actors": "Leonardo DiCaprio",
+        "year": "2010",
+        "rate": 9.5,
+        "trophy": 1
+      },
+      {
+        "imageUrl": "../../assets/images/card.jpg",
+        "title": "The Dark Knight",
+        "actors": "Christian Bale, Heath Ledger",
+        "year": "2008",
+        "rate": 9.2,
+        "trophy": 1
+      },
+      {
+        "imageUrl": "../../assets/images/card.jpg",
+        "title": "Avatar",
+        "actors": "Sam Worthington, Zoe Saldana",
+        "year": "2009",
+        "rate": 8.8,
+        "trophy": 1
+      },
+      {
+        "imageUrl": "../../assets/images/card.jpg",
+        "title": "The Shawshank ",
+        "actors": "Tim Robbins, Morgan ",
+        "year": "1994",
+        "rate": 9.7,
+        "trophy": 1
+      }
+    ]
+ 

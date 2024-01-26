@@ -1,0 +1,177 @@
+<div class="row">
+  <div class="col-md-8">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img
+            src="../../assets/images/slider.jpg"
+            class="d-block w-100"
+            alt="hero"
+          />
+          <!-- Assuming this code is in an Angular component's template file (e.g., app.component.html) -->
+
+          <!-- <img src="assets/images/slider.jpg" alt="Slider Image"> -->
+
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h5>first movie slider</h5>
+            <p>this is our first movie.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="../../assets/images/slider.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h5 class="text-white">Second movie slider</h5>
+            <p>this is our second movie .</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../../assets/images/slider.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h5>third movie slider</h5>
+            <p>this is our third movie slider .</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div routerLink="details/1" class="card mb-3" style="max-width: 540px;" *ngFor="let movie of topMovie">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            [src]="movie.imageUrl"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              {{movie.actors}}
+            </p>
+            <p class="card-text">
+              <a class="btn btn-warning"><i class="bi bi-film"></i> trailer</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- <div routerLink="details/1" class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            src="../../assets/images/card.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This longer.
+            </p>
+            <p class="card-text">
+              <a class="btn btn-warning"><i class="bi bi-film"></i> trailer</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div routerLink="details/1" class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            src="../../assets/images/card.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This longer.
+            </p>
+            <p class="card-text">
+              <a class="btn btn-warning"><i class="bi bi-film"></i> trailer</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+<br />
+
+<div class="row">
+  <h1>Fan Favourite</h1>
+  <hr />
+  <div class="col-md-3" routerLink="details/1" *ngFor="let movie of fanFavoriteMovies">
+    <div class="card">
+      <img [src]="movie.imageUrl" class="card-image" alt="" />
+      <div class="card-body"><h5 class="title">{{movie.title}}</h5>
+    <p class="card-text">{{movie.actors}}</p></div>
+      <div class="card-footer text-center text-muted">
+        <span style="float: left;"> <i class="bi bi-calendar"></i> {{movie.year}}</span>
+        <span><i class="bi bi-star"></i>{{movie.rate}}</span>
+        <span style="float: right;"><i class="bi bi-trophy"></i>{{movie.trophy}}</span>
+    </div>
+    </div>
+  </div>
+ 
+ 
+ 
+</div>
